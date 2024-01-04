@@ -22,21 +22,12 @@ export type Movie = {
     total_results: number;
   };
   
-  // export type Genre = {
-  //   id: number;
-  //   name: string;
-  // };
+  export type Genre = {
+    id: number;
+    name: string;
+  };
   
-  // export type Genres = {
-  //   genres: Genre[];
-  // };
+  export type Genres = {
+    genres: Genre[];
+  };
   
-  // typings.ts
-export type Genres = {
-  genres: Genre[];
-};
-
-export type Genre = {
-  id: number;
-  name: string;
-};
