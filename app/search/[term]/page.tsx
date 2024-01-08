@@ -1,6 +1,6 @@
 import MoviesCarousel from "@/components/MoviesCarousel";
 import { getPopularMovies, getSearchedMovies } from "@/lib/getMovies";
-import { notFound } from "next/navigation";
+// import { notFound } from "next/navigation";
 
 type Props = {
   params: {
@@ -9,7 +9,7 @@ type Props = {
 };
 
 async function SearchPage({ params: { term } }: Props) {
-  if (!term) notFound();
+  // if (!term) notFound();
 
   const termToUse = decodeURI(term);
 
