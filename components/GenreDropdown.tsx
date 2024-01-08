@@ -27,14 +27,12 @@ async function GenreDropdown() {
   const response = await fetch(url.toString(), options);
   // const response = await fetch(url, options);
 
-
   const data = (await response.json()) as Genres;
   console.log(data.genres);
 
   return (
     <DropdownMenu>
-    
-      <DropdownMenuTrigger className="text-white flex justify-center items-center">
+      <DropdownMenuTrigger className="text-white flex justify-center items-center z-50">
         Genre <ChevronDown className="ml-1" />
       </DropdownMenuTrigger>
 
@@ -49,7 +47,6 @@ async function GenreDropdown() {
           </DropdownMenuItem>
         ))}
       </DropdownMenuContent>
-
     </DropdownMenu>
   );
 }
